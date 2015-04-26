@@ -22,11 +22,11 @@ The basic usage is as follow:
 
 
 The library supports only few basic layer types:
-	- Sequential
-	- Linear
-	- ReLU
-	- Tanh
-	- Reshape
-	- SpatialConvolutionMM
-	- SpatialMaxPooling
+- Sequential
+- Linear
+- ReLU
+- Tanh
+- Reshape
+- SpatialConvolutionMM
+- SpatialMaxPooling
 
