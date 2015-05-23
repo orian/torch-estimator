@@ -10,7 +10,7 @@ local groupSizes = {1, math.pow(2,10),math.pow(2,20),math.pow(2,30),math.pow(2,4
 local groupNames = {'B', 'KB', 'MB', 'GB', 'TB', 'PB'}
 
 --[[
-  Pretty print a bytes value. If group is not specified than it chooses 
+  Pretty print a bytes value. If group is not specified than it chooses
   the biggest group where the value is > 0.
 --]]
 function readableBytes(value, group)
@@ -97,7 +97,7 @@ function EstimateSpatialMaxPooling(el)
 end
 
 function EstimateLinear(el)
-	local tnsSize = TensorSize(el.weight) + TensorSize(el.bias) + 
+	local tnsSize = TensorSize(el.weight) + TensorSize(el.bias) +
 		TensorSize(el.gradWeight) + TensorSize(el.gradBias)
 	local outSize = el.bias:size(1)
 	local inSize = el.weight:size(2)
@@ -214,7 +214,7 @@ function unroll(arr, prefix, ret)
 		end
 	end
 	return ret
-end 
+end
 
 local unrollFuncMap = unroll(funcMap)
 
